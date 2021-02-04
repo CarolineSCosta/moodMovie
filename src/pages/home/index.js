@@ -19,10 +19,16 @@ export default () => {
           <h2 class="title-home">Me diga como se sente, que eu te direi o que assistir</h2>
           <a href="./#feeling"> <button id="start" class="btn-start">Começar</button></a>
    </main>
-      <footer><img class="logo-github" src="img/github.png" alt="logo github"/> Desenvolvido por <br> 
-        <a href="https://github.com/ale-alves" target="_blank">Alessandra</a>, <a href="https://github.com/carinarocha" target="_blank">Carina</a>, 
-        <a href="https://github.com/CarolineSCosta" target="_blank">Caroline</a>, <a href="https://github.com/JuliaTerin" target="_blank">Julia</a>, 
-        <a href="https://github.com/julianaads" target="_blank">Juliana</a> e <a href="https://github.com/karinesouza" target="_blank">Karine</a>
+      <footer class="github-footer">
+        <p><i class="github-icon fab fa-github-alt"></i>Desenvolvido por</p>
+        <p>
+        <a class="link-footer" href="https://github.com/ale-alves" target="_blank" rel="noopener noreferrer">Alessandra</a>, 
+        <a class="link-footer" href="https://github.com/carinarocha" target="_blank" rel="noopener noreferrer">Carina</a>,
+        <a class="link-footer" href="https://github.com/CarolineSCosta" target="_blank" rel="noopener noreferrer">Caroline</a>,
+        <a class="link-footer" href="https://github.com/JuliaTerin" target="_blank" rel="noopener noreferrer">Julia</a>, 
+        <a class="link-footer" href="https://github.com/julianaads" target="_blank" rel="noopener noreferrer">Juliana</a> e 
+        <a class="link-footer" href="https://github.com/karinesouza" target="_blank" rel="noopener noreferrer">Karine</a>
+        </p>
       </footer>
   `;
   container.innerHTML = template;

@@ -6,9 +6,18 @@ export default async () => {
     let genres = window.location.hash.substring(window.location.hash.indexOf('?genre=') + '?genre='.length).split(',')
     
     container.innerHTML = `
-        <header>
-            <h2 class="title-movies">Achamos que vai gostar dessa seleção que fizemos para você <img class="logo-github" src="img/favourite.png" alt="logo github"></h2>
-        </header>
+    <header>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="list">
+                    <a class="icon-arrow" href="./#feeling"><i class="fas fa-chevron-left"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            </header>
+        <div>
+            <h2 class="title-movies">Achamos que vai gostar dessa seleção que fizemos para você</h2>
+        </div>
     `;
 
     const data = await Promise.all(genres.map(genre => getMovies(genre)))

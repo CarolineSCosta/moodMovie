@@ -2,6 +2,13 @@ export default () => {
   const container = document.createElement('div');
 
   const template = `
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="list">
+      <a class="icon-arrow" href="./#home"><i class="fas fa-chevron-left"></i></i></a>
+      </li>
+    </ul>
+  </nav>
     <main>
         <h2 class="title-feeling">Oi tudo bem?<br>Como está seu humor hoje?</h2>
         <section>   
